@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Technologies AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <h1>🤖 ABC Technologies AI Assistant</h1>
+
+    <div id="chat-box">
+        <div class="bot">
+            Hello! Welcome to ABC Technologies. How can I help you today?
+        </div>
+    </div>
+
+    <div class="input-area">
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Ask me anything..."
+            onkeypress="if(event.key==='Enter') sendMessage()"
+        >
+
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
